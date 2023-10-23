@@ -16,9 +16,16 @@ return {
       --   ["remote3"] = "github_user", -- GitHub user assume AstroNvim fork
     },
   },
-
+  spec = {
+    { import = "plugins"},
+  },
+  plugins = {
+    init = {
+      "catppuccin/nvim", "presence.nvim",
+    },
+  },
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  colorscheme = "catppuccin",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
